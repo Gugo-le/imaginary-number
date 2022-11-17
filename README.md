@@ -20,10 +20,36 @@ i² = −1.
 a = 3 + 4j
 b = 1 + 7j
 
-print(a + b) # 4+11j
-print(a - b) # 2-3j
-print(a * b) # -25+25j
-print(a / b) # 0.62-0.34j
+print(a + b) # 4 + 11j
+print(a - b) # 2 - 3j
+print(a * b) # -25 + 25j
+print(a / b) # 0.62 - 0.34j
 ```
 초등학교 떄부터 배우던 사칙연산 개념을 사용할 수 있다.
 실수 부분은 그 부분끼리, 허수 부분은 그 부분끼리 사칙연산을 해주면 된다.
+
+### 방정식의 해
+
+```python
+a = int(input('이차항의 계수를 입력하세요. '))
+b = int(input('일차항의 계수를 입력하세요. '))
+c = int(input('상수항의 계수를 입력하세요. '))
+d = b**2 - 4*a*c
+
+if d < 0:
+    real = round(-b / (2*a))
+    imag = round((abs(d) ** 0.5) / (2*a))
+    if real:
+        if imag == 1: print(f'{real} + i, {real} - i')
+        else: print(f'{real} + {imag}i, {real} - {imag}i')
+    else:
+        if imag == 1: print('i, -i')
+        else: print(f'{imag}i, -{imag}i')
+elif d == 0:
+    print(round((-b + d ** 0.5) / (2*a)))
+else:
+    print(round((-b + d ** 0.5) / (2*a)), end=', ')
+    print(round((-b - d ** 0.5) / (2*a)))
+```
+
+모든 고차 함수의 해를 구하는 데 허수가 안 쓰일 수 없다.(1차는 빼고 ㅎ)
