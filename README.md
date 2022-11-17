@@ -53,3 +53,22 @@ else:
 ```
 
 모든 고차 함수의 해를 구하는 데 허수가 안 쓰일 수 없다.(1차는 빼고 ㅎ)
+
+### 복소평면
+
+복소수를 기하학적으로 표현하기 위해 개발된 좌표평면으로 서로 직교하는 실수축과 허수축으로 이루어져 있다.
+
+```python
+import matplotlib.pyplot as plt
+from numpy import *    # 지칭 없이 numpy 메소드 사용가능
+ 
+
+plt.ylabel('Imaginary')
+plt.xlabel('Real')
+plt.axis([-20,20,-20,20])
+plt.axhline(y=0,color='black')
+plt.axvline(x=0, color='black')
+plt.show()
+```
+
+matplotlib로 복소평면을 구현한 코드이다.
