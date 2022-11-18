@@ -79,5 +79,4 @@ i에 i제곱을 하면 어떨까?
 궁금해서 탐구해보았다.
 
 [Wolfram|Alpha](https://www.wolframalpha.com/) (이 곳에서 모든 수의 계산을 할 수 있다.)
-
-
+이 곳에서 i^i, i^i^i, i^i^i^i등을 계산해보고 그래프의 모양 까지 알려준다 ㄷㄷ
