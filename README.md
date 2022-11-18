@@ -78,4 +78,6 @@ matplotlib로 복소평면을 구현한 코드이다.
 i에 i제곱을 하면 어떨까?
 궁금해서 탐구해보았다.
 
+[Wolfram|Alpha](https://www.wolframalpha.com/) (이 곳에서 모든 수의 계산을 할 수 있다.)
+
 
